@@ -25,7 +25,7 @@ for (let i = 1; i <= 100 ; i++){
   }else {
     box.append(i);
   }
-
+  console.log(box);
   }
 
   
