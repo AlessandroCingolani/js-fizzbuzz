@@ -11,17 +11,19 @@ for (let i = 1; i <= 100 ; i++){
 
   const box = document.createElement('div');
   box.classList.add('box');
-  box.append(i);
+ 
   containerBox.append(box)
   if(!(i % 3) && !(i % 5)) {
-    box.textContent = ('FizzBuzz');
+    box.append('FizzBuzz');
     box.classList.add ('fizzbuzz');
   }else if(!(i % 3)){
-    box.textContent = ('Fizz');
+    box.append('Fizz');
     box.classList.add ('fizz');
   }else if (!(i % 5)){
-    box.textContent = ('Buzz');
+    box.append('Buzz');
     box.classList.add ('buzz');
+  }else {
+    box.append(i);
   }
 
   }
